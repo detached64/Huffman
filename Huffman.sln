@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Huffman", "Huffman\Huffman.csproj", "{E72DF375-A159-4DE0-8D13-72A3BC26BB72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Huffman.Test", "Huffman.Test\Huffman.Test.csproj", "{57D81B9C-47F8-420D-B445-31152502801B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Huffman.Legacy", "Huffman.Legacy\Huffman.Legacy.csproj", "{E7AF0A11-AF01-47D6-B0AC-8B978A12E282}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Huffman.Legacy.Test", "Huffman.Legacy.Test\Huffman.Legacy.Test.csproj", "{611A467A-5463-4941-98F1-7D29B9F692C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E72DF375-A159-4DE0-8D13-72A3BC26BB72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E72DF375-A159-4DE0-8D13-72A3BC26BB72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E72DF375-A159-4DE0-8D13-72A3BC26BB72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E72DF375-A159-4DE0-8D13-72A3BC26BB72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57D81B9C-47F8-420D-B445-31152502801B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D81B9C-47F8-420D-B445-31152502801B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D81B9C-47F8-420D-B445-31152502801B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D81B9C-47F8-420D-B445-31152502801B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7AF0A11-AF01-47D6-B0AC-8B978A12E282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7AF0A11-AF01-47D6-B0AC-8B978A12E282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7AF0A11-AF01-47D6-B0AC-8B978A12E282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7AF0A11-AF01-47D6-B0AC-8B978A12E282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{611A467A-5463-4941-98F1-7D29B9F692C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{611A467A-5463-4941-98F1-7D29B9F692C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{611A467A-5463-4941-98F1-7D29B9F692C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{611A467A-5463-4941-98F1-7D29B9F692C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB6A2C7C-EA60-4F8C-AF51-BF98661F06B9}
+		RESX_EnableXlifSync = False
+	EndGlobalSection
+EndGlobal
