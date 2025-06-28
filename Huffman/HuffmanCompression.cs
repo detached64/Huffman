@@ -66,9 +66,9 @@ namespace Huffman
             while (output.Length != decompressedLength)
             {
                 ushort node = root;
-                while (node >= 256)     // Not a leaf node
+                while (node >= 256)                 // Keep reading bits until we reach a leaf node
                 {
-                    int bit = input.ReadBit();  // keep reading bits until we reach a leaf node
+                    int bit = input.ReadBit();
                     if (bit != -1)
                     {
                         node = children[node, bit]; // Traverse the tree based on the bit read
@@ -99,35 +99,35 @@ namespace Huffman
             return queue.Count > 0 ? queue.Dequeue() : null;
         }
 
-        private void GenerateCodes(HuffmanNode root, Dictionary<byte, bool[]> codeTable)
+        private void GenerateCodes(HuffmanNode node, Dictionary<byte, bool[]> codeTable)
         {
-            if (root == null)
+            if (node == null)
             {
                 return;
             }
 
             HuffmanNode current;
-            if (root.IsLeaf)
+            if (node.IsLeaf)
             {
                 List<bool> code = [];
-                current = root;
+                current = node;
                 while (!current.IsRoot)
                 {
                     code.Add(current.Bit);
                     current = current.Parent;
                 }
                 code.Reverse();
-                codeTable[root.Value] = [.. code];
+                codeTable[node.Value] = [.. code];
             }
             else
             {
-                if (root.LeftChild != null)
+                if (node.LeftChild != null)
                 {
-                    GenerateCodes(root.LeftChild, codeTable);
+                    GenerateCodes(node.LeftChild, codeTable);
                 }
-                if (root.RightChild != null)
+                if (node.RightChild != null)
                 {
-                    GenerateCodes(root.RightChild, codeTable);
+                    GenerateCodes(node.RightChild, codeTable);
                 }
             }
         }
