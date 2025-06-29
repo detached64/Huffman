@@ -8,6 +8,7 @@
     <Company>detached64</Company>
     <Description>Huffman Compression Implementation in C#</Description>
     <Copyright>Copyright © 2025 detached64</Copyright>
+    <PublishAOT>true</PublishAOT>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
