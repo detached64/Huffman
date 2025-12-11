@@ -43,11 +43,7 @@ namespace Huffman.Legacy
 
         public T Peek()
         {
-            if (_heap.Count == 0)
-            {
-                throw new InvalidOperationException("Queue is empty");
-            }
-            return _heap[0];
+            return _heap.Count == 0 ? throw new InvalidOperationException("Queue is empty") : _heap[0];
         }
 
         public void Clear()
