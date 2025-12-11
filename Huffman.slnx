@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Huffman.Legacy/Huffman.Legacy.csproj" Id="e7af0a11-af01-47d6-b0ac-8b978a12e282" />
+  <Project Path="Huffman/Huffman.csproj" />
+</Solution>
