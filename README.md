@@ -6,7 +6,7 @@ This repository implements a Huffman compression/decompression algorithm in C#.
 
 The code includes functionality for encoding and decoding binary data, as well as an implementation of **BitStream** for efficient bit-level operations.
 
-[Huffman](./Huffman) contains the implementation targeting .NET 9.0.
+[Huffman](./Huffman) contains the implementation targeting .NET 10.0.
 [Huffman.Legacy](./Huffman.Legacy) contains one targeting .NET Framework 4.8, including a custom `PriorityQueue` implementation.
 
 ## Usage
